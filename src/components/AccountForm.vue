@@ -61,7 +61,6 @@ const handleDeleteAccount = (id: string) => {
 };
 
 onMounted(() => {
-  // Здесь можно добавить загрузку сохраненных данных из localStorage
   const savedAccounts = localStorage.getItem('accounts');
   if (savedAccounts) {
     try {
@@ -151,6 +150,8 @@ onMounted(() => {
   flex: 0 0 auto;
 }
 .account-form__th {
+  color: #b0b3b8;
+  opacity: 1;
   flex: 1 1 0;
   min-width: 0;
   padding: 0 8px;
